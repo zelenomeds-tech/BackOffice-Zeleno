@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Backoffice Zeleno</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { min-height:100vh; font-family:'Poppins',sans-serif; padding:24px;
+    background:linear-gradient(135deg,#013A2A,#00543D); display:flex; align-items:center; justify-content:center; }
+  .wrap { width:100%; max-width:860px; }
+  .topo { text-align:center; margin-bottom:34px; }
+  .logo { font-weight:900; font-size:30px; color:#FDFAF2; letter-spacing:2px; }
+  .sub { color:rgba(253,250,242,.72); font-size:14px; margin-top:6px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+  .card { background:#FDFAF2; border-radius:18px; padding:26px 24px; text-decoration:none; display:block;
+    box-shadow:0 18px 46px rgba(0,0,0,.24); transition:transform .16s ease, box-shadow .16s ease; }
+  .card:hover { transform:translateY(-3px); box-shadow:0 24px 56px rgba(0,0,0,.30); }
+  .tag { display:inline-block; background:#eef7f3; color:#00543D; font-size:10px; font-weight:900;
+    letter-spacing:.09em; text-transform:uppercase; padding:6px 10px; border-radius:999px; }
+  .nome { color:#00543D; font-size:20px; font-weight:900; margin:12px 0 6px; letter-spacing:-.02em; }
+  .desc { color:#5b6b63; font-size:13px; line-height:1.55; }
+  .rodape { text-align:center; color:rgba(253,250,242,.45); font-size:11px; margin-top:28px; line-height:1.6; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topo">
+      <div class="logo">ZELENO</div>
+      <div class="sub">Backoffice — escolha o painel</div>
+    </div>
+
+    <!-- ===== CONECTAR AQUI: um <a class="card"> por painel novo ===== -->
+    <div class="grid">
+
+      <a class="card" href="/descontos">
+        <span class="tag">Comercial</span>
+        <div class="nome">Descontos e cupons</div>
+        <div class="desc">Regras por produto (gramas, %, cupom), desconto global e cupom de frete grátis SP.</div>
+      </a>
+
+      <a class="card" href="/design">
+        <span class="tag">Conteúdo</span>
+        <div class="nome">Banners e destaques</div>
+        <div class="desc">Banners do carrossel e produtos em destaque da home da loja.</div>
+      </a>
+
+    </div>
+    <!-- ===== FIM CONECTAR AQUI ===== -->
+
+    <div class="rodape">
+      Cada painel pede o login dele.<br>
+      Acesso restrito à equipe Zeleno.
+    </div>
+  </div>
+</body>
+</html>
